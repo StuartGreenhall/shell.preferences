@@ -12,17 +12,17 @@ Adding and customizing your own themes pretty much works the same as with plugin
 
 Themes are located in a themes folder and must end with .zsh-theme. The basename of the file is the name of the theme.
 
-```
-$ZSH_CUSTOM
-└── themes
-    └── my_awesome_theme.zsh-theme
-```
+	```
+	$ZSH_CUSTOM
+	└── themes
+	    └── my_awesome_theme.zsh-theme
+	```
 
-Then edit your .zshrc to use that theme.
+	Then edit your .zshrc to use that theme.
 
-```shell
-ZSH_THEME="my_awesome_theme"
-```
+	```shell
+	ZSH_THEME="my_awesome_theme"
+	```
 
 ## Install Solarized dir colors
 
@@ -46,7 +46,7 @@ This plugin offers two commands:
     * `dircolors.ansi-universal` (universal theme for 16- and 256-color terminals)
     * `dircolors.ansi-dark` (optimized version of universal for dark background)
     * `dircolors.ansi-light` (optimized version of universal for light background)
-    * `dircolors.256dark` (degraded solarized dark theme)
+    * `dircolors.256dark` (degraded solarized dark theme) -> My preference
 
 * `setupsolarized` which installs a theme and saves the current configuration to
   the configuration file (`$HOME/.zsh-dircolors.config` by default). Without any
@@ -54,7 +54,7 @@ This plugin offers two commands:
   
 `setupsolarized` must be run at least once in order to create the configuration file. After doing so, the plugin will automatically load your configuration each time a zsh session is started.
 
-## OSX Support
+### OSX Support
 A required command for this library is `dircolors`. This command is not available on OSX. Instead, `gdircolors`
 is provided through Homebrew.
 
