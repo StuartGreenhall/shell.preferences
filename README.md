@@ -12,12 +12,17 @@ Adding and customizing your own themes pretty much works the same as with plugin
 
 Themes are located in a themes folder and must end with .zsh-theme. The basename of the file is the name of the theme.
 
+```
 $ZSH_CUSTOM
 └── themes
-    └── rocinante.zsh-theme
+    └── my_awesome_theme.zsh-theme
+```
+
 Then edit your .zshrc to use that theme.
 
-ZSH_THEME="rocinante"
+```shell
+ZSH_THEME="my_awesome_theme"
+```
 
 ## Install Solarized dir colors
 
