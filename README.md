@@ -1,5 +1,5 @@
 # shell.preferences
-Files containing the why I like my shell to look and run. 
+Files containing the way I like my shell to look and run. 
 
 ## Install Oh-my-zsh
 
