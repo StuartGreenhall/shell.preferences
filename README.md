@@ -24,21 +24,31 @@ Themes are located in a themes folder and must end with .zsh-theme. The basename
 	ZSH_THEME="rocinante"
 	```
 
-## Install Solarized dir colors
+## Install plugins 
 
-1. Clone this repository into `$ZSH_CUSTOM/plugins` (by default `~/.oh-my-zsh/custom/plugins`)
+### Enabling Plugins (zsh-autosuggestions & zsh-syntax-highlighting)
+ - Download zsh-autosuggestions by
+ 
+ `git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions`
+ 
+ - Download zsh-syntax-highlighting by
+ 
+ `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting`
+ 
+ - Download solarized dir colors
+ 
+ `git clone --recursive git://github.com/joel-porquet/zsh-dircolors-solarized $ZSH_CUSTOM/plugins/zsh-dircolors-solarized`
 
-    ```sh
-    git clone --recursive git://github.com/joel-porquet/zsh-dircolors-solarized $ZSH_CUSTOM/plugins/zsh-dircolors-solarized
-    ```
+ - `vim ~/.zshrc` find `plugins=(git)`
+ 
+ - Append `zsh-autosuggestions & zsh-syntax-highlighting` to  `plugins()` like this 
+ 
+ `plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-dircolors-solarized)`
+ 
+ - Reopen terminal
 
-2. Add the plugin to the list of plugins for Oh My Zsh to load:
 
-    ```sh
-    plugins=(zsh-dircolors-solarized)
-    ```
-
-### Usage
+### Solarized dir colors Usage
 
 This plugin offers two commands:
 
